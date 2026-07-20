@@ -208,3 +208,81 @@ font-weight:bold;
 text-decoration:none;
 
 }
+@media (max-width: 768px) {
+
+  /* ===== Navbar ===== */
+  .navbar{
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 15px;
+      text-align: center;
+  }
+
+  .logo-img{
+      width: 55px;
+      height: 55px;
+  }
+
+  .nav-links{
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      gap: 12px;
+      font-size: 13px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+  }
+
+  .icons{
+      gap: 15px;
+  }
+
+  /* ===== Hero ===== */
+  .hero{
+      min-height: 450px;
+      padding: 25px 20px;
+      background-position: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .hero-text{
+      background: rgba(255,255,255,0.75);
+      border-radius: 20px;
+      padding: 20px;
+  }
+
+  .hero-text h1{
+      font-size: 24px;
+  }
+
+  .subtitle{
+      font-size: 15px;
+      text-align: center;
+  }
+
+  .description{
+      font-size: 14px;
+  }
+
+  .hero-buttons{
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+  }
+
+  .hero-buttons a{
+      padding: 10px 22px;
+      font-size: 14px;
+  }
+
+  /* ===== Categories ===== */
+  .category-container{
+      gap: 15px;
+  }
+
+  .category-card{
+      width: 45%;
+      height: auto;
+  }
+}
