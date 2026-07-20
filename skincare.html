@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty | Skincair</title>
+
+    <link rel="stylesheet" href="makeup.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="ind.html">
+            <img src="logo.png" class="logo-img">
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="ind.html">Home</a></li>
+            <li><a href="skincare.html" class="active">Skincair</a></li>
+            <li><a href="ind.html#about">About</a></li>
+            <li><a href="ind.html#contact">Contact</a></li>
+
+        </ul>
+
+         <div class="icons">
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+
+                <input type="text" id="search" placeholder="Search product...">
+
+            </div>
+
+            <div class="profile" id="profile">
+
+               <i class="fa-regular fa-user"></i>
+
+               <span id="username"></span>
+
+               <div class="profile-menu" id="profileMenu">
+
+                   <p id="welcomeUser"></p>
+
+                    
+
+                   <a href="orders.html">My Orders</a>
+
+                  <button id="logout">Logout</button>
+
+                </div>
+
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span id="cartCount">0</span>
+
+            </a>
+
+        </div>
+        <a href="wishlist.html" class="wishlist-icon">
+           ❤️ <span id="wishCount">0</span>
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="tag">NEW COLLECTION 2026</span>
+
+        <h1>
+            Skincair That Makes <br>
+            You Shine ✨
+        </h1>
+
+        <p>
+            Discover premium Skincair products designed
+            to enhance your natural beauty.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn1">Shop Now</a>
+            <a href="#col" class="btn2">Best Sellers</a>
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+        <img src="Glass.png" alt="Skincair Model">
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+    <h2>Our Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Mask.jpg">
+            <h3>Mask</h3>
+            <p>300 DA</p>
+            <button  onclick="addToCart('Mask',300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Moisturizer.jpg">
+            <h3>Moisturizer</h3>
+            <p>3500 DA</p>
+            <button  onclick="addToCart('Moisturizer',3500)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="sunscreen.jpg">
+            <h3>Sunscreen</h3>
+            <p>300 DA</p>
+            <button  onclick="addToCart('Sunscreen',300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Cleanser.jpg">
+            <h3>Cleanser</h3>
+            <p>800 DA</p>
+            <button  onclick="addToCart('Cleanser',800)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Serum.jpg">
+            <h3>Serum</h3>
+            <p>600 DA</p>
+            <button  onclick="addToCart('Serum',600)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="face cream.jpg">
+            <h3>Face Cream</h3>
+            <p>1000</p>
+            <button  onclick="addToCart('Face Cream',1000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="CeraVe .jpg">
+            <h3>Cerave</h3>
+            <p>3500 DA</p>
+            <button  onclick="addToCart('CERAVE',3500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Skincare Routine Must-Haves.jpg">
+            <h3>Centale</h3>
+            <p>8000 DA</p>
+            <button  onclick="addToCart('CENTALE',8000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+               <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="OR.jpg">
+            <h3>Ordinary</h3>
+            <p>3500 DA</p>
+            <button  onclick="addToCart('Ordinary',3500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="jenso.jpg">
+            <h3>Johnson</h3>
+            <p>1500 DA</p>
+            <button  onclick="addToCart('Johnson',1500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+               <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="cr.jpg">
+            <h3>Crem</h3>
+            <p>1500 DA</p>
+            <button  onclick="addToCart('crem',1500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Tools for Glowing Skin.jpg">
+            <h3>Tools for Glowing Skin</h3>
+            <p>3000 DA</p>
+            <button  onclick="addToCart('Tools for Glowing Skin',3000)">Add To Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BEST SELLERS ================= -->
+
+<section class="best">
+
+    <h2>Best Sellers ⭐</h2>
+
+    <div class="best-container"  id="col">
+
+        <div class="best-card">
+            <img src="CeraVe .jpg">
+            <h3>Cerave</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="Moisturizer.jpg">
+            <h3>Moisturizer</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="Tools for Glowing Skin.jpg">
+            <h3>Tools for Glowing Skin</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer">
+
+    <h2>Summer Skincair Sale</h2>
+
+    <p>Enjoy up to 25% OFF on selected products.</p>
+
+    <a href="#products">Shop Now</a>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>Glow Beauty</h2>
+
+    <p>Your Beauty, Your Glow ✨</p>
+
+    <div class="social">
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <i class="fa-brands fa-tiktok"></i>
+
+    </div>
+
+    <p>© 2026 Glow Beauty. All Rights Reserved.</p>
+
+</footer>
+<script src="makeup.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+<script src="wishlist.js"></script>
+</body>
+</html>

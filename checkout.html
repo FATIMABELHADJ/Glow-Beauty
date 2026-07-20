@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | Glow Beauty</title>
+
+<style>
+.checkout-page{
+
+min-height:100vh;
+background:#fff0f7;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+}
+
+
+.checkout-box{
+
+background:white;
+padding:40px;
+border-radius:25px;
+width:400px;
+box-shadow:0 10px 30px #ddd;
+
+}
+
+
+.checkout-box input{
+
+width:100%;
+padding:15px;
+margin:10px 0;
+border-radius:20px;
+border:1px solid #ddd;
+
+}
+
+
+.checkout-box button,
+.checkout-btn{
+
+background:#e75480;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:25px;
+cursor:pointer;
+
+}    
+</style>
+
+</head>
+
+
+<body>
+
+
+<section class="checkout-page">
+
+
+<h1>
+Complete Your Order ✨
+</h1>
+
+
+<div class="checkout-box">
+
+
+<input id="name" type="text" placeholder="Full Name">
+
+<input id="phone" type="tel" placeholder="Phone Number">
+
+<input id="address" type="text" placeholder="Delivery Address">
+
+
+<h2 id="checkoutTotal"></h2>
+
+
+<button onclick="confirmOrder()">
+Confirm Order ✅
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+<script src="checkout.js"></script>
+
+
+</body>
+</html>

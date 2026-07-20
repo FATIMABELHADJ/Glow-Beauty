@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty |Haircair</title>
+
+    <link rel="stylesheet" href="makeup.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="ind.html">
+            <img src="logo.png" class="logo-img">
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="ind.html">Home</a></li>
+            <li><a href="accessories.html" class="active">accessories</a></li>
+            <li><a href="ind.html#about">About</a></li>
+            <li><a href="ind.html#contact">Contact</a></li>
+
+        </ul>
+
+         <div class="icons">
+            <div class="search">
+ 
+              <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                <input
+                 type="text"
+                 id="search"
+                 placeholder="Search product...">
+
+            </div>
+
+            <div class="profile" id="profile">
+
+               <i class="fa-regular fa-user"></i>
+
+               <span id="username"></span>
+
+               <div class="profile-menu" id="profileMenu">
+
+                   <p id="welcomeUser"></p>
+
+                   
+
+                   <a href="orders.html">My Orders</a>
+
+                  <button id="logout">Logout</button>
+
+                </div>
+
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span id="cartCount">0</span>
+
+            </a>
+
+        </div>
+        <a href="wishlist.html" class="wishlist-icon">
+          ❤️ <span id="wishCount">0</span>
+       </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="tag">NEW COLLECTION 2026</span>
+
+        <h1>
+           accessories That Makes <br>
+            You Shine ✨
+        </h1>
+
+        <p>
+            Discover premium accessories products designed
+            to enhance your natural beauty.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn1">Shop Now</a>
+            <a href="#col" class="btn2">Best Sellers</a>
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+        <img src="Quiet.png" alt="Skincair Model">
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+    <h2>Our Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="bracelets.jpg">
+            <h3>bracelets</h3>
+            <p>1200 DA</p>
+            <button  onclick="addToCart('bracelets',1200)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="mngoch.jpg">
+            <h3>Mngouch</h3>
+            <p>900 DA</p>
+            <button  onclick="addToCart('Mngouch',900)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Wedding.jpg">
+            <h3>30 Gorgeous Accessories </h3>
+            <p>1300 DA</p>
+            <button  onclick="addToCart('30 Gorgeous Accessories Under $25 For Your Wedding',1300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="téléch.jpg">
+            <h3>Parior</h3>
+            <p>800 DA</p>
+            <button  onclick="addToCart('parior',800)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Minimal Gold Rings Collection .jpg">
+            <h3>Minimal Gold Rings Collection</h3>
+            <p>2600 DA</p>
+            <button  onclick="addToCart('Minimal Gold Rings Collection',2600)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="BACK.jpg">
+            <h3>BACK</h3>
+            <p>3000</p>
+            <button  onclick="addToCart('BACK',3000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="CLOCK.jpg">
+            <h3>CLOCK</h3>
+            <p>900 DA</p>
+            <button  onclick="addToCart('CLOCK',900)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Flower claw clips.jpg">
+            <h3> Flower claw clips</h3>
+            <p>300 DA</p>
+            <button  onclick="addToCart('Flower claw clips',300)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="LUNETT.jpg">
+            <h3>Lunette</h3>
+            <p>1000 DA</p>
+            <button  onclick="addToCart('Lunette',1000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="TOK.jpg">
+            <h3>tok</h3>
+            <p>1000 DA</p>
+            <button  onclick="addToCart('TOK',1000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="KASKAT.jpg">
+            <h3>KASKAT</h3>
+            <p>500 DA</p>
+            <button  onclick="addToCart('KASKAT',500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="PROSS.jpg">
+            <h3>PROSS</h3>
+            <p>1000 DA</p>
+            <button  onclick="addToCart('PROSS',1000)">Add To Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BEST SELLERS ================= -->
+
+<section class="best">
+
+    <h2>Best Sellers ⭐</h2>
+
+    <div class="best-container"  id="col">
+
+        <div class="best-card">
+            <img src="bracelets.jpg">
+            <h3>bracelets</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="téléch.jpg">
+            <h3>parior</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="Minimal Gold Rings Collection .jpg">
+            <h3>Minimal Gold Rings Collection</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer">
+
+    <h2>Summer Haircair Sale</h2>
+
+    <p>Enjoy up to 25% OFF on selected products.</p>
+
+    <a href="#products">Shop Now</a>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>Glow Beauty</h2>
+
+    <p>Your Beauty, Your Glow ✨</p>
+
+    <div class="social">
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <i class="fa-brands fa-tiktok"></i>
+
+    </div>
+
+    <p>© 2026 Glow Beauty. All Rights Reserved.</p>
+
+</footer>
+<script src="makeup.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+<script src="wishlist.js"></script>
+</body>
+</html>

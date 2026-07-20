@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty | Makeup</title>
+
+    <link rel="stylesheet" href="makeup.css">
+ 
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="ind.html">
+            <img src="logo.png" class="logo-img" alt="Glow Beauty logo">
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="ind.html">Home</a></li>
+            <li><a href="makeup.html" class="active">All</a></li>
+            <li><a href="ind.html#about">About</a></li>
+            <li><a href="ind.html#contact">Contact</a></li>
+
+        </ul>
+
+        
+<div class="icons">
+<div class="search">
+
+     <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+
+    <input type="text" id="search" placeholder="Search product...">
+
+</div>
+
+
+
+<div class="profile" id="profile">
+
+
+<i class="fa-regular fa-user"></i>
+
+
+<span id="username"></span>
+
+
+
+<div class="profile-menu" id="profileMenu">
+
+
+<p id="welcomeUser"></p>
+
+
+ 
+
+
+<a href="orders.html">
+My Orders
+</a>
+
+
+<button id="logout">
+Logout
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<a href="cart.html" class="cart-icon">
+<i class="fa-solid fa-bag-shopping"></i>
+<span id="cartCount">0</span>
+</a>
+
+
+</div>
+
+<a href="wishlist.html" class="wishlist-icon">
+    ❤️ <span id="wishCount">0</span>
+</a>
+
+</nav>
+
+</header>
+
+
+
+ 
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+    <h2>Our Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+             <div class="heart-product" onclick="addToWishlist('Matte Lipstick','lipstick.jpg','300 DA')">
+                <i class="fa-regular fa-heart"></i>
+             </div>
+            <img src="lipstick.jpg" alt="Matte Lipstick">
+            <h3>Matte Lipstick</h3>
+            <p>300 DA</p>
+            <button  onclick="addToCart('Matte Lipstick',300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Foundation','foundation.jpg','1500 DA')">
+               <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="foundation.jpg" alt="Foundation">
+            <h3>Foundation</h3>
+            <p>1500 DA</p>
+            <button  onclick="addToCart('Foundation',1500)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Mascara','mascara.jpg','300 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="mascara.jpg" alt="Mascara">
+            <h3>Mascara</h3>
+            <p>300 DA</p>
+            <button  onclick="addToCart('Mascara',300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('BLUSH','blush.jpg','400 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="blush.jpg" alt="Blush">
+            <h3>Blush</h3>
+            <p>400 DA</p>
+            <button  onclick="addToCart('Blush',400)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Eyeshadow','eyeshadow.jpg','600 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="eyeshadow.jpg" alt="Eyeshadow">
+            <h3>Eyeshadow</h3>
+            <p>600 DA</p>
+            <button  onclick="addToCart('Eyeshadow',600)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Brush Set','bruch.jpg','1000 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="brush.jpg" alt="Brush Set">
+            <h3>Brush Set</h3>
+            <p>1000 DA</p>
+            <button  onclick="addToCart('Brush Set',1000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Contering','contor.jpg','500 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="contor.jpg" alt="Contering">
+            <h3>Contering</h3>
+            <p>500 DA</p>
+            <button  onclick="addToCart('Contering',500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Eentisern','entisern.jpg','350 DA')">
+               <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="entisern.jpg" alt="Eentisern">
+            <h3>Eentisern</h3>
+            <p>350 DA</p>
+            <button  onclick="addToCart('Eentisern',350)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Eylyner','eylyner.jpg','150 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="eylyner.jpg" alt="Eylyner">
+            <h3>Eylyner</h3>
+            <p>150 DA</p>
+            <button  onclick="addToCart('Eylyner',150)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Gloss ','Gloss maybelline.jpg','150 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Gloss maybelline.jpg" alt="Gloss">
+            <h3>Gloss</h3>
+            <p>150 DA</p>
+            <button  onclick="addToCart('Gloss',150)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('Hailt','hylytrt.jpg','350 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="hylytrt.jpg" alt="Hailt">
+            <h3>Hailt</h3>
+            <p>350 DA</p>
+            <button  onclick="addToCart('Hailt',350)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product" onclick="addToWishlist('beautyblendr','beautyblendr.jpg','100 DA')">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="beautyblendr.jpg" alt="Beautyblender">
+            <h3>beautyblendr</h3>
+            <p>100 DA</p>
+            <button  onclick="addToCart('Beautyblender',100)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="bracelets.jpg" alt="Bracelets">
+            <h3>bracelets</h3>
+            <p>1200 DA</p>
+            <button  onclick="addToCart('bracelets',1200)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="mngoch.jpg" alt="Mngouch">
+            <h3>Mngouch</h3>
+            <p>900 DA</p>
+            <button  onclick="addToCart('Mngouch',900)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Wedding.jpg" alt="30 Gorgeous Accessories">
+            <h3>30 Gorgeous Accessories </h3>
+            <p>1300 DA</p>
+            <button  onclick="addToCart('30 Gorgeous Accessories Under $25 For Your Wedding',1300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="téléch.jpg" alt="Parior">
+            <h3>Parior</h3>
+            <p>800 DA</p>
+            <button  onclick="addToCart('parior',800)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Minimal Gold Rings Collection .jpg" alt="Minimal Gold Rings Collection">
+            <h3>Minimal Gold Rings Collection</h3>
+            <p>2600 DA</p>
+            <button  onclick="addToCart('Minimal Gold Rings Collection',2600)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="BACK.jpg" alt="Back">
+            <h3>BACK</h3>
+            <p>3000 DA</p>
+            <button  onclick="addToCart('BACK',3000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="CLOCK.jpg" alt="Clock">
+            <h3>CLOCK</h3>
+            <p>900 DA</p>
+            <button  onclick="addToCart('CLOCK',900)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Flower claw clips.jpg" alt="Flower claw clips">
+            <h3> Flower claw clips</h3>
+            <p>300 DA</p>
+            <button  onclick="addToCart('Flower claw clips',300)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="LUNETT.jpg" alt="Lunette">
+            <h3>Lunette</h3>
+            <p>1000 DA</p>
+            <button  onclick="addToCart('Lunette',1000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="TOK.jpg" alt="Tok">
+            <h3>tok</h3>
+            <p>1000 DA</p>
+            <button  onclick="addToCart('TOK',1000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="KASKAT.jpg" alt="Kaskat">
+            <h3>KASKAT</h3>
+            <p>500 DA</p>
+            <button  onclick="addToCart('KASKAT',500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="PROSS.jpg" alt="Pross">
+            <h3>PROSS</h3>
+            <p>1000 DA</p>
+            <button  onclick="addToCart('PROSS',1000)">Add To Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Mask.jpg" alt="Mask">
+            <h3>Mask</h3>
+            <p>300 DA</p>
+            <button  onclick="addToCart('Mask',300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Moisturizer.jpg" alt="Moisturizer">
+            <h3>Moisturizer</h3>
+            <p>3500 DA</p>
+            <button  onclick="addToCart('Moisturizer',3500)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="sunscreen.jpg" alt="Sunscreen">
+            <h3>Sunscreen</h3>
+            <p>300 DA</p>
+            <button  onclick="addToCart('Sunscreen',300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Cleanser.jpg" alt="Cleanser">
+            <h3>Cleanser</h3>
+            <p>800 DA</p>
+            <button  onclick="addToCart('Cleanser',800)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Serum.jpg" alt="Serum">
+            <h3>Serum</h3>
+            <p>600 DA</p>
+            <button  onclick="addToCart('Serum',600)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="face cream.jpg" alt="Face Cream">
+            <h3>Face Cream</h3>
+            <p>1000 DA</p>
+            <button  onclick="addToCart('Face Cream',1000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="CeraVe .jpg" alt="Cerave">
+            <h3>Cerave</h3>
+            <p>3500 DA</p>
+            <button  onclick="addToCart('CERAVE',3500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Skincare Routine Must-Haves.jpg" alt="Centale">
+            <h3>Centale</h3>
+            <p>8000 DA</p>
+            <button  onclick="addToCart('CENTALE',8000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+               <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="OR.jpg" alt="Ordinary">
+            <h3>Ordinary</h3>
+            <p>3500 DA</p>
+            <button  onclick="addToCart('Ordinary',3500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="jenso.jpg" alt="Johnson">
+            <h3>Johnson</h3>
+            <p>1500 DA</p>
+            <button  onclick="addToCart('Johnson',1500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+               <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="cr.jpg" alt="Crem">
+            <h3>Crem</h3>
+            <p>1500 DA</p>
+            <button  onclick="addToCart('crem',1500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Tools for Glowing Skin.jpg" alt="Tools for Glowing Skin">
+            <h3>Tools for Glowing Skin</h3>
+            <p>3000 DA</p>
+            <button  onclick="addToCart('Tools for Glowing Skin',3000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+               <i class="fa-regular fa-heart"></i>
+             </div>
+            <img src="Argan.jpg" alt="Argan Repair Shampoo">
+            <h3>Argan Repair Shampoo</h3>
+            <p>1200 DA</p>
+            <button  onclick="addToCart('Argan Repair Shampoo',1200)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="CoconutVanilla .jpg" alt="Coconut Moisture Conditioner">
+            <h3>Coconut Moisture Conditioner</h3>
+            <p>900 DA</p>
+            <button  onclick="addToCart('Coconut Moisture Conditioner',900)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Deep.jpg" alt="Keratin Repair Mask">
+            <h3>Keratin Repair Mask</h3>
+            <p>1300 DA</p>
+            <button  onclick="addToCart('Keratin Repair Mask',1300)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="BioxcinKeratin.jpg" alt="Bioxcin Keratin">
+            <h3>Bioxcin Keratin</h3>
+            <p>800 DA</p>
+            <button  onclick="addToCart('Bioxcin Keratin',800)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="L'Oréal.jpg" alt="Silk Hair Scrunchies">
+            <h3>Silk Hair Scrunchies</h3>
+            <p>600 DA</p>
+            <button  onclick="addToCart('Silk Hair Scrunchies',600)">Add To Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="haircare.jpg" alt="Hair care">
+            <h3>Hair care</h3>
+            <p>10000 DA</p>
+            <button  onclick="addToCart('Haire care',10000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="Intimify.jpg" alt="Intinify">
+            <h3>intinify</h3>
+            <p>3500 DA</p>
+            <button  onclick="addToCart('intinify',3500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="hydrt.jpg" alt="Hydrate Shampoo & Conditioner">
+            <h3> Hydrate Shampoo & Conditioner</h3>
+            <p>3000 DA</p>
+            <button  onclick="addToCart('Hydrate Shampoo & Conditioner',3000)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="BUY .jpg" alt="Buy It Now Shampoo Leoarl Paris">
+            <h3>BUY IT NOW SHAMPOO LEOARL PARIS</h3>
+            <p>3500 DA</p>
+            <button  onclick="addToCart('BUY IT NOW SHAMPOO LEOARL PARIS',3500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="10 aceites .jpg" alt="Krestase">
+            <h3>Krestase</h3>
+            <p>1500 DA</p>
+            <button  onclick="addToCart('Krestase',1500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="téléchargement.jpg" alt="Absoul repare">
+            <h3>Absoul repare</h3>
+            <p>1500 DA</p>
+            <button  onclick="addToCart('Absoul repare',1500)">Add To Cart</button>
+        </div>
+        <div class="product-card">
+            <div class="heart-product">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <img src="tel.jpg" alt="Fino">
+            <h3>Fino</h3>
+            <p>3000 DA</p>
+            <button  onclick="addToCart('Fino',3000)">Add To Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BEST SELLERS ================= -->
+
+<section class="best">
+
+    <h2>Best Sellers ⭐</h2>
+
+    <div class="best-container"  id="col">
+
+        <div class="best-card">
+            <img src="L'Oréal.jpg" alt="L'Oréal">
+            <h3>L'Oréal.</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="CoconutVanilla .jpg" alt="Coconut Moisture Conditioner">
+            <h3>Coconut Moisture Conditioner</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="Argan.jpg" alt="Argan Repair Shampoo">
+            <h3>Argan Repair Shampoo</h3>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BEST SELLERS ================= -->
+
+<section class="best">
+
+    <h2>Best Sellers ⭐</h2>
+
+    <div class="best-container"  id="col">
+
+        <div class="best-card">
+            <img src="CeraVe .jpg" alt="Cerave">
+            <h3>Cerave</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="Moisturizer.jpg" alt="Moisturizer">
+            <h3>Moisturizer</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="Tools for Glowing Skin.jpg" alt="Tools for Glowing Skin">
+            <h3>Tools for Glowing Skin</h3>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BEST SELLERS ================= -->
+
+<section class="best">
+
+    <h2>Best Sellers ⭐</h2>
+
+    <div class="best-container"  id="col">
+
+        <div class="best-card">
+            <img src="lipstick.jpg" alt="Matte Lipstick">
+            <h3>Matte Lipstick</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="foundation.jpg" alt="Foundation">
+            <h3>Foundation</h3>
+        </div>
+
+        <div class="best-card">
+            <img src="mascara.jpg" alt="Mascara">
+            <h3>Mascara</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer">
+
+    <h2>Summer Makeup Sale</h2>
+
+    <p>Enjoy up to 25% OFF on selected products.</p>
+
+    <a href="#products">Shop Now</a>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>Glow Beauty</h2>
+
+    <p>Your Beauty, Your Glow ✨</p>
+
+    <div class="social">
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <i class="fa-brands fa-tiktok"></i>
+
+    </div>
+
+    <p>© 2026 Glow Beauty. All Rights Reserved.</p>
+
+</footer>
+<script src="makeup.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+<script src="wishlist.js"></script>
+</body>
+</html>
