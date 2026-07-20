@@ -285,4 +285,51 @@ text-decoration:none;
       width: 45%;
       height: auto;
   }
+/* ===== Categories ===== */
+  .category-container{
+      gap: 15px;
+  }
+
+  .category-card{
+      width: 45%;
+      height: auto;
+  }
+
+  /* ===== Header height fix ===== */
+  header{
+      height: auto;
+      padding-bottom: 10px;
+  }
+
+  body{
+      overflow-x: hidden;
+  }
+
+  /* ===== About section ===== */
+  .about{
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+      gap: 25px;
+  }
+
+  .about-image img{
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+  }
+
+  .about-text{
+      max-width: 100%;
+  }
+
+  .about-text h2{
+      font-size: 26px;
+  }
+
+  .about-text p{
+      font-size: 15px;
+  }
+
+  
 }
